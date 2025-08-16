@@ -1,0 +1,143 @@
+@inproceedings{barrelfish,
+    author = {Baumann, Andrew and Barham, Paul and Dagand, Pierre-Evariste and Harris, Tim and Isaacs, Rebecca and Peter, Simon and Roscoe, Timothy and Sch\"{u}pbach, Adrian and Singhania, Akhilesh},
+    title = {The multikernel: a new {OS} architecture for scalable multicore systems},
+    year = {2009},
+    isbn = {9781605587523},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1629575.1629579},
+    doi = {10.1145/1629575.1629579},
+    abstract = {Commodity computer systems contain more and more processor cores and exhibit increasingly diverse architectural tradeoffs, including memory hierarchies, interconnects, instruction sets and variants, and IO configurations. Previous high-performance computing systems have scaled in specific cases, but the dynamic nature of modern client and server workloads, coupled with the impossibility of statically optimizing an OS for all workloads and hardware variants pose serious challenges for operating system structures.We argue that the challenge of future multicore hardware is best met by embracing the networked nature of the machine, rethinking OS architecture using ideas from distributed systems. We investigate a new OS structure, the multikernel, that treats the machine as a network of independent cores, assumes no inter-core sharing at the lowest level, and moves traditional OS functionality to a distributed system of processes that communicate via message-passing.We have implemented a multikernel OS to show that the approach is promising, and we describe how traditional scalability problems for operating systems (such as memory management) can be effectively recast using messages and can exploit insights from distributed systems and networking. An evaluation of our prototype on multicore systems shows that, even on present-day machines, the performance of a multikernel is comparable with a conventional OS, and can scale better to support future hardware.},
+    booktitle = {Proceedings of the ACM SIGOPS 22nd Symposium on Operating Systems Principles},
+    pages = {29–44},
+    numpages = {16},
+    keywords = {message passing, multicore processors, scalability},
+    location = {Big Sky, Montana, USA},
+    series = {SOSP '09}
+}
+
+@standard{uefi,
+    title = {Unified Extensible Firmware Interface ({UEFI}) Specification},
+    organization = {UEFI Forum, Inc.},
+    revision = {2.11},
+    month = nov,
+    year = {2024},
+    url = {https://uefi.org/sites/default/files/resources/UEFI_Spec_Final_2.11.pdf}
+}
+
+@standard{elf,
+    title = {Executable and Linking Format ({ELF}) Specification},
+    type = {Tool Interface Standard (TIS)},
+    organization = {TIS Committee},
+    revision = {1.2},
+    month = may,
+    year = {1995},
+    url = {https://refspecs.linuxfoundation.org/elf/elf.pdf}
+}
+
+@standard{elflatest,
+    title = {{System V Application Binary Interface}},
+    organization = {Intel},
+    revision = {{Latest Draft}},
+    month = june,
+    year = {2013},
+    url = {https://www.sco.com/developers/gabi/}
+}
+
+@standard{supplement64,
+    title = {AMD64 Architecture Processor Supplement},
+    type = {System V Application Binary Interface},
+    author = {Matz, Michael and Hubička, Jan and Jaeger, Andreas and Mitchell, Mark},
+    revision = {0.99.6},
+    month = jul # { 2,},
+    year = 2012,
+    url = {https://refspecs.linuxfoundation.org/elf/x86_64-abi-0.99.pdf}
+}
+
+@electronic{microsoftx64calling,
+    author = {Microsoft},
+    title = {x64 calling convention},
+    month = mar,
+    year = {2025},
+    url = {https://learn.microsoft.com/en-us/cpp/build/x64-calling-convention}
+}
+
+@standard{pe,
+    title = {Microsoft {Portable Executable} and {Common Object File Format} Specification},
+    organization = {Microsoft Corporation},
+    revision = {6.0},
+    month = feb,
+    year = {1999},
+    url = {http://www.osdever.net/documents/PECOFF.pdf}
+}
+
+@electronic{limineprotocol,
+    title = {The Limine Boot Protocol},
+    author = {mintsuki},
+    url = {https://github.com/limine-bootloader/limine/blob/trunk/PROTOCOL.md}
+}
+
+@electronic{grub,
+    title = {GNU GRUB},
+    organization = {Free Software Foundation, Inc.},
+    url = {https://www.gnu.org/software/grub/}
+}
+
+@standard{multiboot,
+    title = {Multiboot2 Specification},
+    organization = {Free Software Foundation, Inc.},
+    authors = {Bryan Ford and Erich Stefan Boleyn},
+    release = {2.0},
+    year = {2016},
+    url = {https://www.gnu.org/software/grub/manual/multiboot2/multiboot.html}
+}
+
+@electronic{limine,
+    title = {The Limine Boot Loader},
+    author = {mintsuki},
+    url = {https://github.com/limine-bootloader/limine}
+}
+
+@standard{bootboot,
+    title = {The BOOTBOOT Bootloader},
+    author = {Baldaszti Zoltán Tamás},
+    url = {https://gitlab.com/bztsrc/bootboot}
+}
+
+@standard{bootbootprotocol,
+    title = {The {BOOTBOOT Protocol} Specification and Manual},
+    author = {Baldaszti Zoltán Tamás},
+    revision = {1.0},
+    year = {2017-2021},
+    url = {https://gitlab.com/bztsrc/bootboot/-/raw/master/bootboot_spec_1st_ed.pdf}
+}
+
+@inproceedings{linuxaging,
+  author={Cotroneo, Domenico and Natella, Roberto and Pietrantuono, Roberto and Russo, Stefano},
+  booktitle={2010 IEEE 21st International Symposium on Software Reliability Engineering}, 
+  title={Software Aging Analysis of the {Linux Operating System}}, 
+  year={2010},
+  volume={},
+  number={},
+  pages={71-80},
+  keywords={Aging;Kernel;Memory management;Linux;Radiation detectors;Analytical models;Software aging;Linux kernel;trend analysis},
+  doi={10.1109/ISSRE.2010.24}
+}
+
+@inproceedings{linuxaging2,
+  author={Xu, Hong and Tang, Rong},
+  booktitle={2010 3rd International Conference on Biomedical Engineering and Informatics}, 
+  title={Study and improvements for the real-time performance of Linux kernel}, 
+  year={2010},
+  volume={7},
+  number={},
+  pages={2766-2769},
+  keywords={Linux;Real time systems;Kernel;Memory management;Time factors;Radiation detectors;Linux kernel;Real-time operating system;Process schedule;Memory management},
+  doi={10.1109/BMEI.2010.5639840}
+}
+
+@electronic{mygithub,
+    title = {Test implementation of a UEFI x64 bootloader},
+    author = {Myint Myat Aung},
+    url = {https://github.com/posalusa24/test-uefi-bootloader}
+}

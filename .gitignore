@@ -1,0 +1,17 @@
+*.aux
+*.cb
+*.cb2
+*.fls
+*.fmt
+*.fot
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+
+.*.lb
+
+*.fdb_latexmk
+
+_minted-*/
